@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>رسالة خاصة</title>
+    <title>رسالة لخالتي</title>
     <style>
         * {
             margin: 0;
@@ -12,7 +12,7 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Arial', sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             display: flex;
@@ -21,17 +21,17 @@
             padding: 20px;
         }
 
-        .card {
+        .container {
             background: white;
             border-radius: 20px;
             padding: 40px 30px;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            max-width: 500px;
+            max-width: 400px;
             width: 100%;
             text-align: center;
         }
 
-        .images-container {
+        .images-section {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -48,8 +48,8 @@
             width: 100px;
             height: 100px;
             border-radius: 50%;
-            object-fit: cover;
             border: 4px solid #667eea;
+            object-fit: cover;
             box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
         }
 
@@ -62,33 +62,42 @@
         @keyframes pulse {
             0%, 100% {
                 opacity: 1;
+                transform: scale(1);
             }
             50% {
-                opacity: 0.5;
+                opacity: 0.6;
+                transform: scale(1.1);
             }
         }
 
-        h1 {
-            color: #333;
-            font-size: 24px;
-            margin-bottom: 15px;
-            font-weight: 600;
+        .message-section {
+            margin-top: 30px;
         }
 
-        .message {
-            color: #666;
+        .message-section h2 {
+            color: #667eea;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .message-section p {
+            color: #555;
             font-size: 16px;
             line-height: 1.6;
-            word-wrap: break-word;
+            margin-bottom: 10px;
+        }
+
+        .label {
+            color: #999;
+            font-size: 12px;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 2px solid #f0f0f0;
         }
 
         @media (max-width: 480px) {
-            .card {
-                padding: 25px 20px;
-            }
-
-            .images-container {
-                gap: 15px;
+            .container {
+                padding: 30px 20px;
             }
 
             .image-wrapper img {
@@ -96,16 +105,16 @@
                 height: 80px;
             }
 
-            .arrow {
-                font-size: 24px;
-            }
-
-            h1 {
+            .message-section h2 {
                 font-size: 20px;
             }
 
-            .message {
+            .message-section p {
                 font-size: 14px;
+            }
+
+            .arrow {
+                font-size: 24px;
             }
         }
     </style>
@@ -124,8 +133,9 @@
         
         <h1>For Fatoum</h1>
         <p class="message">
-            Labas bi5ir. drt had web bach tchofih w ach balik fih . w pc rah kan tsnah bkouli 7amas insha illah iwsl dghya. Thx
+            Labas bi5ir. drt had web bach tchofih w ach balik fih . w pc rah kan tsnah bkouli 7amas insha illah iwsl dghya.
         </p>
+    <div class="label">Thx</div>
     </div>
 </body>
 </html>
