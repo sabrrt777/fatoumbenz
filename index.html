@@ -24,7 +24,7 @@
         .card {
             background: white;
             border-radius: 20px;
-            padding: 40px;
+            padding: 40px 30px;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
             max-width: 500px;
             width: 100%;
@@ -45,53 +45,63 @@
         }
 
         .image-wrapper img {
-            width: 120px;
-            height: 120px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
             object-fit: cover;
             border: 4px solid #667eea;
-            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
         }
 
         .arrow {
             font-size: 30px;
             color: #667eea;
-            animation: pulse 1.5s ease-in-out infinite;
+            animation: pulse 1.5s infinite;
         }
 
         @keyframes pulse {
             0%, 100% {
-                transform: scale(1);
+                opacity: 1;
             }
             50% {
-                transform: scale(1.2);
+                opacity: 0.5;
             }
         }
 
         h1 {
             color: #333;
+            font-size: 24px;
             margin-bottom: 15px;
-            font-size: 28px;
+            font-weight: 600;
         }
 
         .message {
             color: #666;
-            line-height: 1.8;
             font-size: 16px;
+            line-height: 1.6;
+            word-wrap: break-word;
         }
 
-        @media (max-width: 600px) {
+        @media (max-width: 480px) {
             .card {
-                padding: 25px;
+                padding: 25px 20px;
+            }
+
+            .images-container {
+                gap: 15px;
             }
 
             .image-wrapper img {
-                width: 100px;
-                height: 100px;
+                width: 80px;
+                height: 80px;
+            }
+
+            .arrow {
+                font-size: 24px;
             }
 
             h1 {
-                font-size: 24px;
+                font-size: 20px;
             }
 
             .message {
@@ -114,7 +124,7 @@
         
         <h1>For Fatoum</h1>
         <p class="message">
-            Labas bi5ir. drt had web bach tchofih w ach balik fih . w pc rah kan tsnah bkouli 7amas insha illah iwsl dghya. Thx!
+            Labas bi5ir. drt had web bach tchofih w ach balik fih . w pc rah kan tsnah bkouli 7amas insha illah iwsl dghya. Thx
         </p>
     </div>
 </body>
