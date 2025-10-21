@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رسالة خاصة</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .images-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .image-wrapper {
+            position: relative;
+        }
+
+        .image-wrapper img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #667eea;
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+        }
+
+        .arrow {
+            font-size: 30px;
+            color: #667eea;
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 28px;
+        }
+
+        .message {
+            color: #666;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                padding: 25px;
+            }
+
+            .image-wrapper img {
+                width: 100px;
+                height: 100px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .message {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="images-container">
+            <div class="image-wrapper">
+                <img src="https://cdn.discordapp.com/attachments/1276639014522196175/1371110992439939203/20250511_140455.png?ex=68f8d69e&is=68f7851e&hm=483207720dcc5083640429cca109fef60b7e50d851cd9c3329dea8769dde1bde&" alt="123">
+            </div>
+            <div class="arrow"></div>
+            <div class="image-wrapper">
+                <img src="https://cdn.discordapp.com/attachments/1276639014522196175/1430263290336116937/image.png?ex=68f923fd&is=68f7d27d&hm=8f345129a4e677de4a6acf069a7fe6232acc8c07fae7fa5103690a3dac109c65&" alt="صورة">
+            </div>
+        </div>
+        
+        <h1>For Fatoum</h1>
+        <p class="message">
+            Labas bi5ir. drt had web bach tchofih w ach balik fih . w pc rah kan tsnah bkouli 7amas insha illah iwsl dghya. Thx!
+        </p>
+    </div>
+</body>
+</html>
